@@ -14,6 +14,6 @@ allow[msg] {
 }
 
 deny[msg] {  
-  count(pod_list) = 0
+  count(pod_list) > 0
   msg := "No pod found"
 }
