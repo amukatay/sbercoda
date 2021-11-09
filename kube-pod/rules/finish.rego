@@ -7,13 +7,13 @@ pod_list[pods] {
   item.kind == "Pod"                   
   pods := item
 }
-
-allow[msg] {  
-  count(pod_list) > 0
-  msg := "Pod created"
-}
-
-deny[msg] {  
-  count(pod_list) = 0
-  msg := "No pod found"
-}
+#
+#allow[msg] {  
+#  count(pod_list) > 0
+#  msg := "Pod created"
+#}
+#
+#deny[msg] {  
+#  count(pod_list) = 0
+#  msg := "No pod found"
+#}
