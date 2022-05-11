@@ -18,7 +18,7 @@ deny[msg] {
   msg := "No pod found3"
 }
 
-error[msg] {  
-  count(pod_list) = 0
-  msg := "No pod found2"
-}
+#error[msg] {  
+#  count(pod_list) = 0
+#  msg := "No pod found2"
+#}
