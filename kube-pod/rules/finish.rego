@@ -1,6 +1,6 @@
 package sbercode
 
-default error = []
+default deny = []
 
 pod_list[pods] {
   item := input.items[_]   
@@ -13,7 +13,7 @@ allow[msg] {
   msg := "Pod created"
 }
 
-deny[msg] {  
+error[msg] {  
   count(pod_list) = 0
   msg := "No pod found3"
 }
