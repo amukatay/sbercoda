@@ -1,6 +1,6 @@
 package sbercode
 
-default error = []
+# default error = []
 
 pod_list[pods] {
   item := input.items[_]   
