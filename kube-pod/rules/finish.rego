@@ -1,6 +1,6 @@
 package sbercode
 
-# default error = []
+default error = []
 
 pod_list[pods] {
   item := input.items[_]   
@@ -18,7 +18,7 @@ deny[msg] {
   msg := "https://www.google.ru/ \n No pod found333333333333333333333333333333333333333333333333333333333 33333333333333333 333333333333333 33333333333333 333333333333333 333333333 333333333 \r\n 33333333333 \n 22222222 444444444 \n"
 }
 
-error[msg] {  
-  count(pod_list) > 0
-  msg := "https://www.google.ru/"
-}
+#error[msg] {  
+#  count(pod_list) > 0
+#  msg := "https://www.google.ru/"
+#}
