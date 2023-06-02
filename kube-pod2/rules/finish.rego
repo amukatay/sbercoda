@@ -20,5 +20,5 @@ deny[msg] {
 
 error[msg] {  
   count(pod_list) < 0
-  msg := "https://www.google.ru/"
+  msg := "https://www.google2.ru/"
 }
