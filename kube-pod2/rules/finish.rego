@@ -14,7 +14,7 @@ allow[msg] {
 }
 
 allow[msg] {  
-  count(pod_list) = 0
+  count(pod_list) > 0
   msg := "Pod created2"
 }
 
